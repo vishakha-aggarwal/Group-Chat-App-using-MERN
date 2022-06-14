@@ -1,0 +1,14 @@
+GET http://localhost:3001/prevChat/124
+
+###
+
+POST http://localhost:3001/newChat
+Content-Type: application/json
+
+{
+    "room": "124",
+    "message": "hello",
+    "userId": "1hejgfu1",
+    "username": "vish",
+    "date": "11 jun 4.00 am"
+}

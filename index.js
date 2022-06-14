@@ -7,19 +7,11 @@ const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
 
-// if(process.env.NODE_ENV === "production") 
-// {
-//   app.use(express.static("client"));
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'client/public', 'index.html'));
-//   })
-// }
-
 app.use(express.static(path.join(__dirname + "/public")));
 app.use(express.json());
 app.use(cors()); 
 
-mongoose.connect('mongodb+srv://vishakha_251:vishakha@chatapp.bm5ck.mongodb.net/chatapp?retryWrites=true&w=majority', {
+mongoose.connect("mongodb+srv://vishakha_251:vishakha@chatapp.bm5ck.mongodb.net/chatapp?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("Connected to MongoDB")).catch(console.error);
