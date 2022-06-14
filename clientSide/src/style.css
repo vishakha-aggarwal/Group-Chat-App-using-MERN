@@ -1,0 +1,175 @@
+.App{
+    margin: 0px;
+    padding: 0px;
+}
+.header{
+    border: 1px solid gray;
+    background-color: rgb(217, 185, 248);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    width: 40vw;
+    text-align: center;
+    margin-left: 25vw;
+    font-size: 30px;
+}
+
+.container{
+    border: 1px solid gray;
+    background-color: rgb(232, 235, 251);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    width: 75vw;
+    height: 70vh;
+    margin: 20px;
+    margin-left: 12vw;
+    box-shadow: rgb(221, 221, 221) 10px 5px 15px 5px;
+}
+
+.footer{
+    border: 1px solid gray;
+    background-color: rgb(217, 185, 248);
+    border-radius: 5px;
+    padding: 10px;
+    font-family: cursive;
+    width: 40vw;
+    text-align: center;
+    margin-left: 25vw;
+}
+
+.login{
+    padding: 20px;
+    width: 50%;
+    height: 70%;
+    margin: 5vh;
+    margin-left: 20%;
+    border: 1px solid rgb(194, 194, 194);
+    font-family: cursive;
+    background-color: rgb(251, 255, 243);
+    border-radius: 10px;
+}
+
+.details{
+    margin: 20px;
+}
+
+.inpLogin{
+    width: 70%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.join{
+    width:30%;
+    height: 50px;
+    background-color: rgb(168, 255, 168);
+    border: 1px solid rgb(198, 198, 198);
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.sendBox{
+    width: 80%;
+    bottom: 12%;
+    position: fixed;
+    z-index: 10;
+}
+.inpMsg{
+    height: 30px;
+    width: 80%;
+    padding: 10px;
+    border: 1px solid rgb(136, 136, 136);
+    border-radius: 10px;
+    margin: 2px;
+}
+
+.send{
+    height: 50px;
+    width: 10%;
+    border: 1px solid rgb(222, 222, 222);
+    border-radius: 10px;
+    margin: 10px;
+    background-color: rgb(155, 236, 155);
+}
+
+.msg{
+    border: 2px solid black;
+    width: 100%;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.you{
+    float: right;
+    clear: both;
+}
+
+.other{
+    float: left;
+    clear: both;
+}
+
+.yourMessage{
+    border: 2px solid rgb(105, 163, 19);
+    padding: 10px;
+    background-color: rgba(255, 242, 143, 0.882);
+    margin: 2px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.user{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.date{
+    float:right;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+.otherMessage{
+    border: 2px solid rgb(105, 163, 19);
+    padding: 10px;
+    background-color: rgba(143, 229, 255, 0.744);
+    margin: 2px;
+    border-radius: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.logout{
+    border: 1px solid gray;
+    float: right;
+    height: auto;
+    width: 9%;
+    text-align: center;
+    border-radius: 5px;
+    background-color: rgb(255, 82, 82);
+    font-family: cursive;
+    padding: 2px;
+    justify-content: center;
+    overflow: auto;
+}
+
+.people{
+    float: left;
+    border: 1px solid black;
+    width: 11%;
+    height: 70vh;
+    padding-left: 10px;
+    text-align: center;
+    font-family: cursive;
+    overflow-y: auto;
+    overflow-x: auto;
+    border-radius: 5px;
+    background-color: rgb(246, 220, 212);
+}
+
+hr{
+    height: 2px;
+    background-color: black;
+    padding: 0px;
+    width: auto;
+}
