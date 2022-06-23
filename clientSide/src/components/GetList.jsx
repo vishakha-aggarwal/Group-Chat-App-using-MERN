@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 // const api_base = "http://localhost:3001";
-const api_base = "https://chat-in-group.netlify.app";
+const api_base = "https://chat-in-grp.herokuapp.com";
 
 function GetList(props) {
     

@@ -4,11 +4,13 @@ import Header from './components/Header';
 import Container from './components/Container';
 import Footer from './components/Footer.jsx';
 import './style.css';
-
-const socket = io.connect("https://chat-in-group.netlify.app/");
+const io = require("socket.io-client");
 
 function App() {
-
+  
+  const socket = io("https://chat-in-grp.herokuapp.com", {
+    withCredentials: true
+  });
 
   return (
     <div className='App'>

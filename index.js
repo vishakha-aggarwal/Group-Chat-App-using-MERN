@@ -34,11 +34,12 @@ const ChatSchema = new Schema({
 const Chat = mongoose.model("Chat", ChatSchema);
 
 const server = http.createServer(app);
-const io = new Server(server, {
+const io = require("socket.io")(server, {
   cors: {
-    origin: "*",
+    origin: "https://chat-in-group.netlify.app",
     methods: ["GET", "POST"],
-  },
+    credentials: true
+  }
 });
 
 let userList = [];
