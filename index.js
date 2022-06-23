@@ -1,3 +1,4 @@
+require('dotenv').config();
 const express = require("express");
 const http = require("http");
 const mongoose = require("mongoose");
@@ -6,7 +7,6 @@ const { Server } = require("socket.io");
 const path = require("path");
 const PORT = process.env.PORT || 3001;
 const app = express();
-require('dotenv').config();
 
 app.use(express.static(path.join(__dirname + "/clientSide/build")));
 app.use(express.json());
@@ -76,6 +76,10 @@ function deleteUser(userId) {
     }
   }
 }
+
+app.get("/", (req, res) => {
+  res.json("server started");
+})
 
 app.get("/prevChat/:room", async (req, res) => {
 
