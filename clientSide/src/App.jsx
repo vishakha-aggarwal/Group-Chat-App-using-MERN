@@ -5,7 +5,7 @@ import Container from './components/Container';
 import Footer from './components/Footer.jsx';
 import './style.css';
 
-const socket = io.connect();
+const socket = io.connect("");
 
 function App() {
 
