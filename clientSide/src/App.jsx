@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import io from "socket.io-client";
 import Header from './components/Header';
 import Container from './components/Container';
 import Footer from './components/Footer.jsx';
