@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from 'react';
 import You from './You';
 import Other from './Other';
 import '../style.css';
-const api_base = "http://localhost:3001";
+const api_base = "https://chat-in-group.netlify.app/";
 
 function Chat(props){
 

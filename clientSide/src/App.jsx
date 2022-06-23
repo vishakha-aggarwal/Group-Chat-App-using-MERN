@@ -5,7 +5,7 @@ import Container from './components/Container';
 import Footer from './components/Footer.jsx';
 import './style.css';
 
-const socket = io.connect("http://localhost:3001");
+const socket = io.connect();
 
 function App() {
 
