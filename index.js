@@ -12,8 +12,8 @@ app.use(express.static(path.join(__dirname + "/clientSide/build")));
 app.use(express.json());
 app.use(cors()); 
 
-mongoose.connect(process.env.MONGO_URL, {
-// mongoose.connect("mongodb+srv://vishakha_251:vishakha@chatapp.bm5ck.mongodb.net/chatapp?retryWrites=true&w=majority", {
+// mongoose.connect(process.env.MONGO_URL, {
+mongoose.connect("mongodb+srv://vishakha_251:vishakha@chatapp.bm5ck.mongodb.net/chatapp?retryWrites=true&w=majority", {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => console.log("Connected to MongoDB")).catch(console.error);
